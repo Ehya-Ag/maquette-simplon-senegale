@@ -1,7 +1,7 @@
 /*Header*/
 .titre{
     display: flex;
-    margin-top: 20px;
+    margin-top: 60px;
     color: #ce0033;
     font-size: 50px;
     justify-content: center;
@@ -10,13 +10,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0;  
     overflow-x: hidden;
     justify-content: center;
     align-items: center;
 }
 section{
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
 }
 
@@ -24,13 +24,22 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px 20px;
+    height: 40px;
+    padding: 50px;
+    padding: 10px 20px; 
     background-color: #ffffff;
     color: #fff;
+    position: fixed;
+    background-color: white;
+    gap: 750px;
+    left: 35px;
+    box-shadow: 0 2px 5px 0 #c4c6c8;
+    z-index: 999;
+    top: 0;
 }
 
 .logo img {
-    height: 70px;
+    height: 55px;
 }
 
 .menu ul {
@@ -263,17 +272,35 @@ header {
   position: absolute;
   justify-content: center;
   margin-top: 35%;
-  margin-left: 500px;
+  margin-left: 700px;
   border-radius: 15px 15px 15px 15px;
   width: 200px;
     }
     /*pilliers*/
     .page_pilliers {
         margin-top: 600px;
-        margin-left: 300px;
+        left: 352px;
         z-index: 999;
+        position: relative;
     }
-    
+    #cercle{
+        z-index: -999;
+        display: flex;
+        position: absolute;
+        left: 900px;
+        width: 100px;
+        margin-top: -20px;   
+    }
+    #cercle2{
+        z-index: -999;
+        display: flex;
+        position: absolute;
+        margin-left: -40px;
+        width: 100px;
+        margin-top: 630px;
+        filter: alpha(opacity=10); opacity:0,5;
+        
+    }
     .page_pilliers .point {
         display: inline-block;
         width: 10px;
@@ -343,6 +370,7 @@ header {
     .p1, .p2, .p3, .p4, .p5, .p6{
         display: flex;
         flex-direction: column;
+        background-color: #ffffff;
         box-shadow: 5px 5px 5px 5px #979292;
         border-bottom: 5px solid #ce0033;
         margin-left: 5px;
@@ -529,7 +557,7 @@ header {
     .team-cards {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 100px;
         flex-wrap: wrap;
     }
     
@@ -537,7 +565,7 @@ header {
         background-color: #f9f9f9;
         border-radius: 10px;
         padding: 20px;
-        width: 250px;
+        width: 350px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: center;
     }
@@ -811,7 +839,7 @@ header {
         color: #fff;
         border: none;
         padding: 10px 20px;
-        border-radius: 5px;
+        border-radius: 35px;
         cursor: pointer;
     }
     
@@ -864,12 +892,16 @@ header {
         display: flex;
         justify-content: space-around;
         padding: 20px 0;
-        border-top: 1px solid #333;
-        border-bottom: 1px solid #333;
+
     }
     .left #simplon{
         filter: invert(1000%);
-
+    }
+    #simplon img{
+        width: 180px;
+        display: flex;
+        position: relative;
+        left: 200px;
     }
     .left, .millieu, .right {
         flex: 1;
@@ -878,15 +910,24 @@ header {
     
     .left h2 {
         margin-bottom: 10px;
+        position: relative;
+        left: 230px;
+        font-size: 20px;
     }
     
-    .reseau a {
+    .reseau_sociaux a {
         margin-right: 10px;
+
     }
-    
-    .reseau img {
-        width: 20px;
-        height: 20px;
+    .reseau_sociaux{
+        left: 199px;
+  position: relative;
+
+    }
+    .reseau_sociaux img {
+        width: 30px;
+        height: 30px;
+
     }
     
     .millieu ul {
@@ -915,7 +956,10 @@ header {
     .right .contact, .right .lettre {
         margin-bottom: 20px;
     }
-    
+    .contact p a{
+        text-decoration: none;
+        color: #ffffff;
+    }
     .lettre form {
         display: flex;
         width: 300px;
@@ -928,7 +972,7 @@ header {
         width: 200px;
         border: 1px solid #333;
         border-radius: 5px 0 0 5px;
-        margin-top: 0;
+        margin: 0;
     }
     
     .lettre button {
@@ -951,7 +995,8 @@ header {
         justify-content: space-between;
         padding: 10px 20px;
         background-color: #ce0033;
-        font-size: 0.9em;
+        font-size: 1em;
+        color: #ffffff;
     }
     
     /* .bottom-footer .heart {
