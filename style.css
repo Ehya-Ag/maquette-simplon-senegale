@@ -151,7 +151,7 @@ header {
     flex-direction: row;
     padding: 10px;
     position: relative;
-    height: 700px;
+    height: 800px;
     width: 100%;
 }
 .gauche {
@@ -275,6 +275,35 @@ header {
   margin-left: 700px;
   border-radius: 15px 15px 15px 15px;
   width: 200px;
+    }
+    /*les points*/
+    .page_pillier {
+        text-align: center;
+        z-index: 999;
+        position: relative;
+        top: -50px;
+    }
+    .page_pillier .point {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .page_pillier .point.activer {
+        background-color: #ce0033;
+        width: 50px;
+        height: 10px;
+        border-radius: 20%;
+    }
+    
+    .page_pillier .point.active {
+        background-color: #ce0033;
+    }
+    .pilier{
+        display: flex;
+        margin-left: 5%;
     }
     /*pilliers*/
     .page_pilliers {
