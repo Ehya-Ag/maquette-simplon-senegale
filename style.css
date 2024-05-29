@@ -178,7 +178,7 @@ header {
     margin-top: 200px;
     margin-left: -10px;
     background-color: #ce0033;
-    box-shadow: 0 15px  #f62dbf , 0 30px  #efbcc8;
+    box-shadow: 0 15px  #e76080 , 0 30px  #efbcc8;
     height: 200px;
     width: 700px;
     border-radius: 0 0 120px 0;
@@ -862,7 +862,7 @@ header {
     }
     .page_colla {
         margin-top: 30px;
-        margin-left: 800px;
+        margin-left: 871px;
     }
     
     .page_colla .point {
