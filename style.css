@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 1850px;
     height: 40px;
     padding: 50px;
     padding: 10px 20px; 
@@ -32,7 +33,6 @@ header {
     position: fixed;
     background-color: white;
     gap: 750px;
-    left: 35px;
     box-shadow: 0 2px 5px 0 #c4c6c8;
     z-index: 999;
     top: 0;
@@ -203,7 +203,8 @@ header {
     font-weight: bold;
     transform: rotate(7deg);
     border-radius: 15px 15px 15px 15px;
-    box-shadow: -5px -5px 5px 0 #979292;
+    box-shadow: -2px -2px 2px 0 #bebbbb;
+    border: none;
 }
 .div2 {
     width: 500px;
@@ -217,7 +218,8 @@ header {
     margin-left: 50px;
     margin-top: 30px;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: -5px -5px 5px 0 #979292;
+    box-shadow: -2px -2px 2px 0 #bebbbb;
+    border: none;
     }
     /*pedagogie*/
     .pedagogique{
@@ -272,7 +274,8 @@ header {
   position: absolute;
   justify-content: center;
   margin-top: 35%;
-  margin-left: 700px;
+  margin-left: 755px;
+  text-align: center;
   border-radius: 15px 15px 15px 15px;
   width: 200px;
     }
@@ -318,7 +321,8 @@ header {
         position: absolute;
         left: 900px;
         width: 100px;
-        margin-top: -20px;   
+        margin-top: -20px;
+        opacity: 55%; 
     }
     #cercle2{
         z-index: -999;
@@ -358,6 +362,7 @@ header {
         margin-top: -50px;
         margin-left: 150px;
         color: #ce0033;
+        
     }
     .gauche2 {
         
@@ -539,6 +544,7 @@ header {
         margin: 0 auto;
         padding: 20px;
         text-align: center;
+        display: contents;
         }
         .titre {
         color: #a02;
@@ -706,12 +712,12 @@ header {
     } 
     .plus{
         background-color: #ce0033;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        color: #ffffff;
-        font-size: 20px;
-        text-align: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 38px;
+  text-align: center;
     }
     .travail-header1 {
         display: flex;
@@ -875,6 +881,11 @@ header {
     
     button[type="submit"]:hover {
         background-color: #cc0000;
+    }
+    .form-group input[type="checkbox"] {
+        margin-left: 23px;
+        border-radius: 5px;
+        margin-bottom: 10px;
     }
      /*Section collaborateur*/
      .collaborateur {
